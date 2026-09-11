@@ -16,5 +16,7 @@ def max_jump(track: List[int]) -> bool:
     while i <= size:
         if i == size:
             return True
+        elif track[i] == 0 and i != size:
+            return False
         i += track[i]
     return False
